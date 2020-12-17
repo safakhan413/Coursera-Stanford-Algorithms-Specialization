@@ -4,6 +4,8 @@
 # # pick a remaining edge (u,v) uniformly at random
 # # merge (or contract) u and v into a single vertex
 # # remove self loops
+from random import choice
+from copy import deepcopy
 
 def contract(graph):
     u = choice(list(graph.keys()))
